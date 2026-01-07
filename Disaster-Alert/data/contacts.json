@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Police Department",
+    "role": "Emergency",
+    "phone": "100",
+    "email": "police@disasterhelp.gov"
+  },
+  {
+    "name": "Fire Department",
+    "role": "Emergency",
+    "phone": "101",
+    "email": "fire@disasterhelp.gov"
+  },
+  {
+    "name": "Ambulance",
+    "role": "Medical Emergency",
+    "phone": "102",
+    "email": "ambulance@disasterhelp.gov"
+  },
+  {
+    "name": "Disaster Management Authority",
+    "role": "Relief & Rescue",
+    "phone": "1800-123-456",
+    "email": "dma@disasterhelp.gov"
+  }
+]
