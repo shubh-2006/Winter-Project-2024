@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhaya – Disaster Management</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo">🌍 Abhaya</div>
+    <ul>
+      <li><a href="#home" id="nav-home">Home</a></li>
+      <li><a href="#alerts" id="nav-alerts">Alerts</a></li>
+      <li><a href="#guidelines" id="nav-guidelines">Guidelines</a></li>
+      <li><a href="#contacts" id="nav-contacts">Contacts</a></li>
+      <li><a href="#shelters" id="nav-shelters">Shelters</a></li>
+      <li><a href="#news" id="nav-news">News</a></li>
+    </ul>
+
+    <!-- ✅ Search bar -->
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+
+    <!-- ✅ Language toggle -->
+    <button id="lang-toggle" class="lang-btn">தமிழ்</button>
+  </nav>
+
+  <main id="home">
+    <section class="hero">
+      <h1>Abhaya – Disaster Management</h1>
+      <p id="tagline">Stay safe with real-time alerts, emergency contacts, and shelters.</p>
+      <button class="sos-btn" id="sos-btn">🚨 SOS</button>
+    </section>
+  </main>
+
+  <!-- Dashboard layout -->
+  <div class="dashboard">
+    <div>
+      <section id="alerts" class="card">
+        <h2 id="alerts-title">🚨 Disaster Alerts</h2>
+        <div id="alerts-container">Loading alerts...</div>
+      </section>
+
+      <section id="shelters" class="card">
+        <h2 id="shelters-title">🏠 Nearby Shelters</h2>
+        <div id="map"></div>
+        <ul id="shelter-list"></ul>
+      </section>
+
+      <section id="news" class="card">
+        <h2 id="news-title">📰 Disaster News</h2>
+        <p>Latest disaster-related news will appear here.</p>
+      </section>
+    </div>
+
+    <div>
+      <section id="guidelines" class="card">
+        <h2 id="guidelines-title">📖 Safety Guidelines</h2>
+        <ul>
+          <li>Keep emergency contacts handy.</li>
+          <li>Prepare a first aid kit.</li>
+          <li>Stay calm and follow official updates.</li>
+          <li>Move to safe shelters if needed.</li>
+        </ul>
+      </section>
+
+      <section id="contacts" class="card">
+        <h2 id="contacts-title">📞 Emergency Contacts</h2>
+        <div id="contacts-container">Loading contacts...</div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Abhaya – Disaster Management</p>
+  </footer>
+
+  <script src="js/alerts.js"></script>
+  <script src="js/contacts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+<nav class="navbar">
+  <div class="logo">🌍 Abhaya</div>
+  <ul>
+    <li><a href="#home" id="nav-home">Home</a></li>
+    <li><a href="#alerts" id="nav-alerts">Alerts</a></li>
+    <li><a href="#guidelines" id="nav-guidelines">Guidelines</a></li>
+    <li><a href="#contacts" id="nav-contacts">Contacts</a></li>
+    <li><a href="#shelters" id="nav-shelters">Shelters</a></li>
+    <li><a href="#news" id="nav-news">News</a></li>
+  </ul>
+
+  <!-- ✅ Search bar -->
+  <input type="text" id="search-bar" class="search-bar" placeholder="Search...">
+
+  <!-- ✅ Language toggle -->
+  <button id="lang-toggle" class="lang-btn">தமிழ்</button>
+
+  <!-- ✅ Dark mode toggle -->
+  <button id="dark-toggle" class="dark-btn">🌙</button>
+</nav>
